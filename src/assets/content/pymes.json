@@ -1,0 +1,163 @@
+[
+    {
+        "bullets" : [
+            {
+                "icon": "fa-list",
+                "title": "Evaluación inicial del SG-SST",
+                "body": "Según la Resolución 0312 del 2019, que establece la evaluación de los estándares mínimos en seguridad y salud en el trabajo."
+            },
+            {
+                "icon": "fa-university",
+                "title": "Formulación de políticas en SST",
+                "body": "Adaptaremos e implementaremos tus políticas para el compromiso de tu empresa y tus trabajadores en SST."
+            },
+            {
+                "icon": "fa-cogs",
+                "title": "Plan anual de trabajo",
+                "body": "Te estructuraremos el plan de actividades para la gestión del SG-SST."
+            },
+            {
+                "icon": "fa-gavel",
+                "title": "Matriz legal",
+                "body": "Estableceremos el marco legal que te aplica según tu actividad económica y procesos desarrollados."
+            },
+            {
+                "icon": "fa-id-badge",
+                "title": "Matriz de identificación y evaluación de peligros",
+                "body": "De acuerdo a tus procesos desarrollados te apoyaremos en la identificación y evaluación de tus riesgos."
+            },
+            {
+                "icon": "fa-eye",
+                "title": "Programas de gestión",
+                "body": "De acuerdo a los procesos críticos que desarrolles te estableceremos que programas de gestión enfocados al riesgo se deben establecer."
+            },
+            {
+                "icon": "fa-exclamation-triangle",
+                "title": "Plan de prevención",
+                "body": "Preparación y respuesta de emergencias, según la ubicación geográfica, los procesos desarrollados estableceremos los preámbulos para el control de las amenazas y la prevención de emergencias."
+            },
+            {
+                "icon": "fa-search",
+                "title": "Investigación de accidentes de trabajo y enfermedades laborales",
+                "body": "Te guiaremos en el proceso legal que se debe cumplir para ATEL."
+            },
+            {
+                "icon": "fa-thumbs-o-up",
+                "title": "Plan de mejora",
+                "body": "Te entregaremos que prioridades se deben establecer para la disminución del riesgo legal."
+            },
+            {
+                "icon": "fa-book",
+                "title": "Documentación del SG-SST, en las fases PHVA",
+                "body": "PLANEAR, HACER, VERIFICAR Y ACTUAR"
+            }
+        ],
+        "plans": [
+            {
+                "head": "Plan de 1 a 10 trabajadores",                
+                "category": [
+                    {
+                        "id": 1,
+                        "idForm": "basic-1-from-10-workers",
+                        "plan": "Básico",
+                        "price": "$ 745.312",
+                        "btn": "Descargar plan básico",
+                        "icon": "fa-star-o",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-1a10-basico.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 61% a 72%"
+                    },
+                    {
+                        "id": 2,
+                        "idForm": "plus-1-from-10-workers",
+                        "plan": "Plus",
+                        "price": "$ 1.119.062",
+                        "btn": "Descargar plan plus",
+                        "icon": "fa-star-half-o",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-1a10-plus.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 73% a 86%"
+                    },
+                    {
+                        "id": 3,
+                        "idForm": "premium-1-from-10-workers",
+                        "plan": "Premium",
+                        "price": "$ 1.490.625",
+                        "btn": "Descargar plan premium",
+                        "icon": "fa-star",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-1a10-premium.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 87% a 100%"
+                    }
+                ]
+            },
+            {
+                "head": "Plan de 11 a 50 trabajadores",
+                "category": [
+                    {
+                        "id": 1,
+                        "idForm": "basic-11-from-50-workers",
+                        "plan": "Básico",
+                        "price": "$ 1.006.171",
+                        "btn": "Descargar plan básico",
+                        "icon": "fa-star-o",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-11a50-basico.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 61% a 72%"
+                    },
+                    {
+                        "id": 2,
+                        "idForm": "plus-11-from-50-workers",
+                        "plan": "Plus",
+                        "price": "$ 1.379.921",
+                        "btn": "Descargar plan plus",
+                        "icon": "fa-star-half-o",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-11a50-plus.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 73% a 86%"
+                    },
+                    {
+                        "id": 3,
+                        "idForm": "premium-11-from-50-workers",
+                        "plan": "Premium",
+                        "price": "$ 1.751.484",
+                        "btn": "Descargar plan premium",
+                        "icon": "fa-star",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-11a50-premium.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 87% a 100%"
+                    }
+                ]
+            },
+            {
+                "head": "Plan más de 51 trabajadores",
+                "category": [
+                    {
+                        "id": 1,
+                        "idForm": "basic-more-51-workers",
+                        "plan": "Básico",
+                        "price": "$ 1.358.331",
+                        "btn": "Descargar plan básico",
+                        "icon": "fa-star-o",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-mas51-basico.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 61% a 72%"
+                    },
+                    {
+                        "id": 2,
+                        "idForm": "plus-more-51-workers",
+                        "plan": "Plus",
+                        "price": "$ 1.862.894",
+                        "btn": "Descargar plan plus",
+                        "icon": "fa-star-half-o",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-mas51-plus.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 73% a 86%"
+                    },
+                    {
+                        "id": 3,
+                        "idForm": "premium-more-51-workers",
+                        "plan": "Premium",
+                        "price": "$ 2.364.504",
+                        "btn": "Descargar plan premium",
+                        "icon": "fa-star",
+                        "pdf" : "assets/pdf-plans/Planes-ser-pymes-mas51-premium.pdf",
+                        "percentage" : "Porcentaje de cumplimiento 87% a 100%"
+                    }
+                ]
+            }
+        ]
+    }
+]

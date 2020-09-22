@@ -1,0 +1,196 @@
+<section class="serpyme">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-4 text-center">
+                <img src="assets/images/home/logo-pyme-sst.png" alt="Outsourcing - aSERseguridad" class="logo-product">
+            </div>
+            <div class="col-12">
+                <h2>Paquete inicial SST</h2>
+                <div class="line-title"></div>
+                <p>Incluido en los diferentes planes</p>
+            </div>
+            <div class="col-12 col-md-3" *ngFor="let bullet of bullets">
+                <div class="box-bullet">
+                    <div class="iconBullet">
+                        <i class="fa {{ bullet.icon }}" aria-hidden="true"></i>
+                    </div>
+                    <div class="txtBullet">
+                        <h4> {{ bullet.title }} </h4>
+                        <p> {{ bullet.body }} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 algin-sefl-center">
+                <img src="assets/images/pymes/img-app.svg" alt="Aplicativo web" />
+            </div>
+            <div class="col-12 col-md-6 algin-sefl-center">
+                <h2>Aplicativo Web</h2>
+                <p>Para la Implementación, Gestión y Administración del SG-SST</p>
+                <a class="btn-aser btn-outline-white w-40-btn margin-l h-lg-btn" data-toggle="modal" data-target="#appModal" target="_blank">
+                    <span>Prueba demo sin costo</span>
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="plans">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Suscripción SST - Ser Pyme SST</h2>
+                <div class="line-title"></div>
+                <p>Porcentajes de cumplimiento Decreto 1072 de 2015 y resolución 0312 de 2019 según plan seleccionado</p>
+            </div>
+            <div class="col-12 col-md-4" *ngFor="let offer of offers; let i = index">
+                <div class="box-plan">
+                    <h3>{{ offer.head }}</h3>
+                    <p>Planes</p>
+                    <div class="select-plan">
+                        <div class="custom-plan" *ngFor="let plans of offer.dataOffer">
+                            <a (click)="toggleChild(i, plans.id)" class="boton">
+                                <i class="fa {{ plans.icon}} circle-plan" [ngClass]="plans.plan == 'Básico' ? 'basic' : '' || plans.plan == 'Plus' ? 'silver' : '' || plans.plan == 'Premium' ? 'gold' : ''" ></i>
+                                <h4>{{ plans.plan }}</h4>
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="line-separate"></div>                    
+                    <div class="box-price-complete">
+                        <div class="box-price" *ngFor="let plans of offer.dataOffer; let j = index" id="detail{{ i }}{{ plans.id }}" >
+                        <p class="percentage">{{ plans.percentage }}</p>
+                        <h3> {{ plans.price }} <span>+ IVA</span></h3>
+                        <div class="stripe-col">
+                            <div class="imgStripe">
+                                <img src="assets/images/pymes/co.jpg" alt="Colombia" />
+                            </div>
+                            <div class="txtStripe">
+                                <p>pesos / mensual por un año</p>
+                            </div>
+                        </div>
+                        <p class="tym">Aplican condiciones</p>
+                        <a class="btn-aser btn-trans w-100-btn margin-auto h-lg-btn" target="_blank" (click)="downloadPlan(offer.head, plans,i)" data-toggle="modal" data-target="#downloadPlanModal" data-backdrop="static"
+                        [ngClass]="
+                            plans.plan == 'Básico' ? 'basic' : '' || 
+                            plans.plan == 'Plus' ? 'silver' : '' || 
+                            plans.plan == 'Premium' ? 'gold' : ''
+                        " >
+                            <span>{{ plans.btn | titlecase }}</span>
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a>        
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sura">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="assets/images/pymes/logo-aSER-Sura-horizontal.jpg" alt="Aserseguridad - Sura" />
+                <p><span>aSERseguridad</span> con el respaldo de seguros <span>SURA</span>, garantiza su compromiso con tu empresa asegurando la calidad y cumplimiento de sus servicios con los siguientes amparos incluidos en cualquier plan de suscripción seleccionado:</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="box-bullet">
+                    <div class="iconBullet">
+                        <i class="fa fa-gratipay" aria-hidden="true"></i>
+                    </div>
+                    <div class="txtBullet">
+                        <h4>Cumplimiento:</h4>
+                        <p>Te devolvemos hasta el 20% del valor contratado durante la vigencia del contrato, sus prórrogas y tres (3) meses más. Garantizando un cumplimiento de lo pactados en nuestros servicios </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="box-bullet">
+                    <div class="iconBullet">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="txtBullet">
+                        <h4>Responsabilidad por daño a terceros:</h4>
+                        <p>Ante la manifestación de riesgos propios relacionados con la seguridad y salud en el trabajo mediante la representación, diseño y administración del SG-SST por responsabilidad civil extracontractual se generan amparos para predios y por operación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="box-bullet">
+                    <div class="iconBullet">
+                        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="txtBullet">
+                        <h4>Calidad del servicio</h4>
+                        <p>Te devolvemos hasta el 20% del valor contratado durante la vigencia del contrato, sus prórrogas y tres (3) meses más. Comprometidos con el mejor recurso humano para tu empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="downloadPlanModal" tabindex="-1" aria-labelledby="downloadPlanModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" 
+            [ngClass]="
+                namePlan == 'Básico' ? 'basic' : '' || 
+                namePlan == 'Plus' ? 'silver' : '' || 
+                namePlan == 'Premium' ? 'gold' : ''
+            ">
+                <h5 class="modal-title" id="exampleModalLabel">{{ headPlan }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">            
+                <div class="box-form">
+                    <div id="{{ idForm != undefined ? idForm : '' }}"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Formulario enviado
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal Aplicativo -->
+<div class="modal fade" id="appModal" tabindex="-1" aria-labelledby="appModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">                 
+                <div class="box-form">
+                    <h3>Inscríbete aquí si deseas conocer nuestra <span>plataforma virtual SST</span> a manera de demo</h3>
+                    <div id="appSG-SST"></div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Aplicativo -->

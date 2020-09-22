@@ -1,0 +1,24 @@
+[
+    {        
+        "plans": [
+            {
+                "head": "Plan por hora",
+                "price": "$ 49.450",
+                "btn": "Suscríbete",
+                "accompaniment": "Hora de acompañamiento"                             
+            },
+            {
+                "head": "Plan por día",
+                "price": "$ 274.320",
+                "btn": "Suscríbete",
+                "accompaniment": "Día de acompañamiento"                             
+            },
+            {
+                "head": "Plan por mes",
+                "price": "$ 2.332.850",
+                "btn": "Suscríbete",
+                "accompaniment": "Mes de acompañamiento"                             
+            }
+        ]
+    }
+]

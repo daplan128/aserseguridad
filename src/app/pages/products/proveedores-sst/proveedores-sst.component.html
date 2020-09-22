@@ -1,0 +1,76 @@
+<section class="suppliers">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-4 text-center">
+                <img src="assets/images/home/logo-proveedores-sst.png" alt="Outsourcing - aSERseguridad" class="logo-product">
+            </div>
+            <div class="col-12">
+                <h2>Nuestros productos</h2>
+                <div class="line-title"></div>
+            </div>
+            <div class="col-12 col-md-3" *ngFor="let product of suppliersItems; let i = index">
+                <div class="thumbnail-product-aser">
+                    <div class="more-info" 
+                        [ngClass]="
+                            product.id == 1 ? 'id-1' : '' ||
+                            product.id == 2 ? 'id-2' : '' ||
+                            product.id == 3 ? 'id-3' : '' ||
+                            product.id == 4 ? 'id-4' : '' ||
+                            product.id == 5 ? 'id-5' : '' ||
+                            product.id == 6 ? 'id-6' : '' ||
+                            product.id == 7 ? 'id-7' : '' ||
+                            product.id == 8 ? 'id-8' : '' ||
+                            product.id == 9 ? 'id-9' : '' ||
+                            product.id == 10 ? 'id-10' : ''
+                    ">
+                        <span>+ más info</span>
+                    </div>
+                    <a class="link-product" (click)="products(product,i)" data-toggle="modal" data-target="#detailModal">
+                        <img alt="{{product.title}}" class="opacity-img" src="{{product.img}}"  />
+                    </a>
+                    <div class="caption-product-aser"
+                    [ngClass]="
+                        product.id == 1 ? 'id-1' : '' ||
+                        product.id == 2 ? 'id-2' : '' ||
+                        product.id == 3 ? 'id-3' : '' ||
+                        product.id == 4 ? 'id-4' : '' ||
+                        product.id == 5 ? 'id-5' : '' ||
+                        product.id == 6 ? 'id-6' : '' ||
+                        product.id == 7 ? 'id-7' : '' ||
+                        product.id == 8 ? 'id-8' : '' ||
+                        product.id == 9 ? 'id-9' : '' ||
+                        product.id == 10 ? 'id-10' : ''
+                    ">
+                        <div class="icon-product">
+                            <img alt="{{product.title}}" src="{{product.icon}}" />
+                        </div>
+                        <div class="txt-product">
+                            <h3>{{product.title}}</h3>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img src="{{ productDetail != undefined ? productDetail.icon: '' }}" alt="{{ productDetail != undefined ? productDetail.title: '' }}" />
+            <h5 class="modal-title" id="exampleModalLabel">{{ productDetail != undefined ? productDetail.title: '' }}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <img src="{{ productDetail != undefined ? productDetail.imgModal: '' }}" alt="{{ productDetail != undefined ? productDetail.title: '' }}" />
+            <ul>
+                <li *ngFor="let bullet of bullets">{{ bullet.txt }}</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>

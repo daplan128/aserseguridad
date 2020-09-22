@@ -1,0 +1,57 @@
+[ 
+    {
+        "home": [
+            {
+                "userId": 1,
+                "id": 1,
+                "img": "assets/images/headers/banner-main-pymes.jpg",
+                "title": "Ser Pyme SST",      
+                "body": "aSERseguridad te brinda <span>Respaldo garantizado</span> para que te acredites en la implementación del <span>SG-SST</span>, bajo la modalidad de suscripción con un <span>Precio cómodo mensual</span> según el plan que elijas.\n\nConoce nuestro modelo de suscripción para la implementación del SG-SST.",
+                "url": "/ser-pyme-sst",
+                "brand": "assets/images/home/logo-pyme-sst.png",
+                "slogan": "Acreditación en la implementación del SG-SST"
+            },
+            {
+                "userId": 2,
+                "id": 2,
+                "img": "assets/images/headers/banner-main-outsourcing.jpg",
+                "title": "Outsourcing SST",      
+                "body": "Con nosotros cuentas con <span>profesionales expertos</span> en SST avalados, quienes te <span>representarán</span> y acompañarán en <span>tu empresa</span>, para ejecutar y mantener tu SG-SST.\n\nPregúntanos por la modalidad Outsourcing SST.",
+                "url": "/outsourcing-sst",
+                "brand": "assets/images/home/logo-outsourcing-sst.png",
+                "slogan": "Acompañamos para ejecutar y mantener tu SG-SST"
+            },
+            {
+                "userId": 3,
+                "id": 3,
+                "img": "assets/images/headers/banner-main-proveedores.jpg",
+                "title": "Proveedores SST",      
+                "body": "aSERseguridad te apoya en la <span>Ejecución</span> de tu sistema de gestión en seguridad en el trabajo, selecciona en nuestra gama de productos en <span>SST</span>, y dale cumplimiento a tu plan de trabajo.",
+                "url": "/proveedores-sst",
+                "brand": "assets/images/home/logo-proveedores-sst.png",
+                "slogan": "Juntos avanzamos más"
+            },
+            {
+                "userId": 4,
+                "id": 4,
+                "img": "assets/images/headers/banner-main-eventos.jpg",
+                "title": "Convenciones SST",      
+                "body": "Nuestras Pymes <span>posicionan su marca,</span> dominan sus ventas y <span>crecen</span> con otros, gracias a las Convenciones SST.\n\nHaz parte de esta comunidad empresarial y crece con tu <span>sueño.</span>",
+                "url": "/",
+                "brand": "assets/images/home/logo-convenciones-sst.png",
+                "slogan": "Posicionan su marca, dominan sus ventas y crecen con otros"
+            },
+            {
+                "userId": 5,
+                "id": 5,
+                "img": "assets/images/headers/banner-main-us.jpg",
+                "title": "¿Quiénes somos?",      
+                "body": "Somos la empresa enfocada en <span>Respaldar</span> a todas las <span>PYMES</span>, en la intervención de <span>Riesgos Laborales</span> con la implementación de su <span>SG-SST</span>; Generado aumento en su productiva empresarial y reconocimiento de marca.",
+                "url": "/quienes-somos",
+                "brand": "assets/images/home/logo-convenciones-sst.png",
+                "slogan": "Posicionan su marca, dominan sus ventas y crecen con otros"
+            }
+        ]
+    }    
+
+]

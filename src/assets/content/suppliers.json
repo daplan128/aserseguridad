@@ -1,0 +1,181 @@
+[ 
+    {
+        "suppliers": [
+            {
+                "id": 1,
+                "img": "assets/images/suppliers/products/automatizacion-digital-sst.jpg",
+                "imgModal": "assets/images/suppliers/modals/automatizacion-digital-sst.jpg",
+                "icon": "assets/images/suppliers/icons/automatizacion-digital-sst.png",
+                "title": "Automatización digital en SST",
+                "body": [
+                    {"txt": "Automatización digital con aplicativo Web para la administración, ejecución y control del sistema de gestión en seguridad y salud en el trabajo."}
+                ],
+                "url": "/"
+            },
+            {
+                "id": 2,
+                "img": "assets/images/suppliers/products/sistemas-gestion.jpg",
+                "imgModal": "assets/images/suppliers/modals/sistemas-gestion.jpg",
+                "icon": "assets/images/suppliers/icons/sistemas-gestion.png",
+                "title": "Sistemas de gestión",
+                "body": [
+                    {"txt": "Auditoría Legal en Seguridad y Salud en el Trabajo (Decreto 1072 de 2015)."},
+                    {"txt": "Asesoría en el Cierre de No Conformidades a los Sistemas de Gestión."},
+                    {"txt": "Auditorias externas para procesos certificacion en ISO, Calidad, Ambiente y Seguridad y Salud en el Trabajo."},
+                    {"txt": "Implementación de los Sistemas de Gestión ISO 9001 – ISO 14001 – ISO 31000 – ISO 45001 – RUC “Procesos de certificación y acompañamiento externo"}
+                ],
+                "url": "/"
+            },
+            {
+                "id": 3,
+                "img": "assets/images/suppliers/products/plan-legal.jpg",
+                "imgModal": "assets/images/suppliers/modals/plan-legal.jpg",
+                "icon": "assets/images/suppliers/icons/plan-legal.png",
+                "title": "Plan legal",
+                "body": [
+                    {"txt": "Auditoría en los estándares mínimos según lineamientos MINISTERIO DE TRABAJO Res. 0312 de 2019."},
+                    {"txt": "Asesoría en Responsabilidad Legal laboral basado en el Sistema General de Riesgos Laborales. “Matrices Legales"},
+                    {"txt": "Entrenamiento y estructuración de Comite Paritario en Seguridad y Salud en el Trabajo (COPASST)."},
+                    {"txt": "Diseño del Reglamento de Higiene y Seguridad Industrial."},
+                    {"txt": "Diseño en la elaboración de la Política de Seguridad y Salud en el Trabajo."},
+                    {"txt": "Diseño en el Procedimiento para Notificación e Investigación de Accidentes de Trabajo. Res. 1401 del 2007 “Metodologías de Investigación"},
+                    {"txt": "Diseño de planes de trabajo de acuerdo al Sistema de Gestión de la Seguridad y Salud en el Trabajo."},
+                    {"txt": "Diseño del método para evaluar responsabilidades en Seguridad y Salud en el trabajo según sea el cargo en la organización."},
+                    {"txt": "Diseño de plataforma de indicadores del sistema de gestión de seguridad y salud en el trabajo."}
+                ],
+                "url": "/"
+            },
+            {
+                "id": 4,
+                "img": "assets/images/suppliers/products/seguridad-industrial.jpg",
+                "imgModal": "assets/images/suppliers/modals/seguridad-industrial.jpg",
+                "icon": "assets/images/suppliers/icons/seguridad-industrial.png",
+                "title": "Automatización digital en SST",
+                "body": [
+                    {"txt": "Elaboración de matrices de peligros. GTC 45, HAZOP, AMFE, WHAT IF. PHA."},
+                    {"txt": "Ejecución de inspecciones de seguridad con indicadores de gestión. Modelo NTC 4114."},
+                    {"txt": "Diseño de planes de trabajo para prevención en accidentes de trabajo. Bajo Res. 1401 del 2007."},
+                    {"txt": "Asesoría en almacenamiento seguro y distribución de planta. Standar OSHA."},
+                    {"txt": "Diseño de sistemas de almacenamiento y rotulado de sustancias químicas. NFPA 704, NTC 4435."},
+                    {"txt": "Asesoría en normalización de actividades y estándares de seguridad industrial. Modelo NTC 4116."},
+                    {"txt": "Diseño de matriz de elementos de protección personal. “Cargos o Proceso"},
+                    {"txt": "Investigación de accidentes de trabajo. MORTALES, GRAVES Según Res. 1401 del 2017, acompañamiento en auditoría por Inspectores de trabajo del Ministerio de Trabajo."},
+                    {"txt": "Diseño de programa prevención de la accidentalidad basada en el comportamiento."},
+                    {"txt": "Estudios de señalización en seguridad industrial."}
+                ],
+                "url": "/"
+            },
+            {
+                "id": 5,
+                "img": "assets/images/suppliers/products/higiene-industral.jpg",
+                "imgModal": "assets/images/suppliers/modals/higiene-industral.jpg",
+                "icon": "assets/images/suppliers/icons/higiene-industrial.png",
+                "title": "Higiene industrial",
+                "body": [
+                    {"txt": "Análisis de las Mediciones ocupacionales y controles de fuentes bajo diseño de sistemas de ingeniería."},
+                    {"txt": "Seguimiento a planes de acción para mejorar las condiciones higiénicas según resultados de las mediciones ocupacionales."},
+                    {"txt": "Desarrollo de Mediciones Ocupacionales. “Ruido, Iluminación, Confort térmicos, Vibraciones y material particulado."}
+                ],
+                "url": "/"
+            },
+            {
+                "id": 6,
+                "img": "assets/images/suppliers/products/medicina-preventiva.jpg",
+                "imgModal": "assets/images/suppliers/modals/medicina-preventiva.jpg",
+                "icon": "assets/images/suppliers/icons/medicina-preventiva.png",
+                "title": "Medicina preventiva del trabajo",
+                "body": [
+                    {"txt": "Análisis de factores de riesgos psicosociales bajo Res. 2646 del 2008."},
+                    {"txt": "Desarrollo del programa de riesgo psicosocial."},
+                    {"txt": "Conformación del comité de convivencia laboral."},
+                    {"txt": "Aplicación de encuestas de baterías del Ministerio de Trabajo."},
+                    {"txt": "Intervención a los factores de riesgo psicosocial potencial."},
+                    {"txt": "Técnicas para el manejo del estrés."},
+                    {"txt": "Diseño de programas de vigilancia epidemiológica para los riesgos higiénicos propensos a enfermedades laborales."},
+                    {"txt": "Diseño de programa de prevención de lesiones osteomusculares."},
+                    {"txt": "Inspecciones de puesto de trabajo con énfasis osteomuscular. APT."},
+                    {"txt": "Análisis del ausentismo laboral."},
+                    {"txt": "Diseño de profesiogramas."},
+                    {"txt": "Diseño de procedimientos para exámenes médicos ocupacionales."}
+                ],
+                "url": "/"
+            },
+            {
+                "id": 7,
+                "img": "assets/images/suppliers/products/planes-de-emergencia.jpg",
+                "imgModal": "assets/images/suppliers/modals/planes-de-emergencia.jpg",
+                "icon": "assets/images/suppliers/icons/planes-de-emergencia.png",
+                "title": "Planes de emergencia",
+                "body": [
+                    {"txt": "Diseño y aplicación de Sistema de Comando de Incidentes."},
+                    {"txt": "Diseño de planes de prevención, preparación y atención de emergencias."},
+                    {"txt": "Diseños de procedimientos operativos normalizados."},
+                    {"txt": "Diseño de planes de atención de incidentes."},
+                    {"txt": "Asesoría en identificación, análisis de amenazas y de vulnerabilidad."},
+                    {"txt": "Conformación de la brigada de emergencias."},
+                    {"txt": "Diseño de programas de formación a la brigada de emergencias."},
+                    {"txt": "Formación brigadas de emergencias. BASICAS, INTERMEDIAS, AVANZADAS."},
+                    {"txt": "Diseño de plan de emergencias químicas."},
+                    {"txt": "Diseño en planes de contingencias."},
+                    {"txt": "Estudios de necesidades de señalización de emergencias."},
+                    {"txt": "Auditorías a planes de emergencias."},
+                    {"txt": "Simulacros de emergencias."},
+                    {"txt": "Control del riesgo ofídico."},
+                    {"txt": "Asesoría en el manejo de hojas de seguridad (msds) y tarjetas de emergencia."}
+                ],
+                "url": "/"
+            },
+
+            {
+                "id": 8,
+                "img": "assets/images/suppliers/products/programas-prevencion.jpg",
+                "imgModal": "assets/images/suppliers/modals/programas-prevencion.jpg",
+                "icon": "assets/images/suppliers/icons/programas-prevencion.png",
+                "title": "Programa de prevención y control de tareas críticas",
+                "body": [
+                    {"txt": "Diseño de programas de gestión para tareas de alto riesgo (trabajos en alturas, espacios confinados, trabajo en caliente y aseguramiento de energías peligrosas, excavaciones, izaje de cargas, riesgo público y maquinaria pesada)."},
+                    {"txt": "Diseño del modelo de permisos de trabajo según la actividad de alto riesgo."},
+                    {"txt": "Análisis de tareas críticas y modelos de intervención."},
+                    {"txt": "Diseño en el programa transporte seguro de valores."},
+                    {"txt": "Diseño programa seguro en alturas (certificación trabajo seguro en alturas) e identificación de dispositivos de seguridad. Res. 1409 del 2012."},
+                    {"txt": "Diseño de programa de seguridad vial. Res. 1565 del 2014."}
+                ],
+                "url": "/"
+            },
+            {
+                "id": 9,
+                "img": "assets/images/suppliers/products/formacion.jpg",
+                "imgModal": "assets/images/suppliers/modals/formacion.jpg",
+                "icon": "assets/images/suppliers/icons/formacion.png",
+                "title": "Formación y capacitación",
+                "body": [
+                    {"txt": "Capacitación en seguridad industrial; Riesgos mecánicos, riesgos locativos, riesgos eléctricos, riesgos públicos, riesgo de tránsito y riesgo químico."},
+                    {"txt": "Capacitación en higiene industrial; Riesgos biomecánicos, riesgos físicos y iesgos químicos."},
+                    {"txt": "Capacitación en planes de emergencias; primeros auxilios, prácticas bomberibles, evacuación, búsqueda y rescate, sistema de comando incidentes."},
+                    {"txt": "Seminarios en sistemas de gestión en seguridad y salud en el trabajo."},
+                    {"txt": "Curso de auditoría en sistema de gestión de seguridad y salud en el trabajo."},
+                    {"txt": "Formación en trabajo seguro en alturas según Res. 1409 del 2012."}
+                ],                
+                "url": "/"
+            },
+            {
+                "id": 10,
+                "img": "assets/images/suppliers/products/coaching.jpg",
+                "imgModal": "assets/images/suppliers/modals/coaching.jpg",
+                "icon": "assets/images/suppliers/icons/coaching.png",
+                "title": "Coaching en SST",
+                "body": [
+                    {"txt": "Prevenir accidentes por medio de la concienciación y el amor a la vida y la familia."},
+                    {"txt": "Fomentar una cultura fuerte en seguridad en todas las actividades, haciendo que ésta una prioridad y posicionando la estrategia como un compromiso permanente, individual y común."},
+                    {"txt": "Generar comportamientos consientes para des automatizar las actividades cotidianas y convertir cada una de éstas en estados presenciales del ser viviendo aquí y ahora."},
+                    {"txt": "Influenciar los comportamientos a riesgo del grupo, mediante el ejemplo en todos los niveles y procesos de la organización."},
+                    {"txt": "Fortalecer la consciencia en la identificación de peligros, riesgos y controles."},
+                    {"txt": "Implementar manifestaciones visibles y evaluar las acciones coherentes del compromiso consciente para modificar el comportamiento riesgoso de las personas."},
+                    {"txt": "Generar una conciencia consiente en todos los aspectos de la vida de cada participante “creando un mejor futuro aquí y ahora ”, a través de la metodología “MINDFULNESS” o conciencia plena ( AQUÍ Y AHORA)."}
+                ],
+                "url": "/"
+            }
+        ]
+    }    
+
+]

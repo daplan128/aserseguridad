@@ -1,0 +1,57 @@
+<section class="outosourcing">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-4 text-center">
+                <img src="assets/images/home/logo-outsourcing-sst.png" alt="Outsourcing - aSERseguridad" class="logo-product">
+            </div>
+            <div class="col-12">
+                <h2>Solicita</h2>
+                <div class="line-title"></div>
+                <p>tu profesional experto en SST</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="assets/images/outsourcing/info-outsourcing-01.svg" alt="Profesional experto en SST" />
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="assets/images/outsourcing/info-outsourcing-02.svg" alt="Profesional experto en SST" />
+            </div>            
+        </div>
+    </div>
+</section>
+
+<section class="plans">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Suscripción Outsourcing SST</h2>
+                <div class="line-title"></div>
+                <p>Profesionales SST</p>
+            </div>
+            <div class="col-12 col-md-4" *ngFor="let plan of plansOutsourcing">
+                <div class="box-plan">
+                    <h3 [ngClass]="plan.head == 'Plan por hora' ? 'basic' : '' || plan.head == 'Plan por día' ? 'silver' : '' || plan.head == 'Plan por mes' ? 'gold' : ''" >{{ plan.head }}</h3>
+                    <p>Desde</p>
+                    <!-- <div class="line-separate"></div>
+                    <p class="percentage">{{ offer.percentage }}</p> -->
+                    <div class="box-price">
+                        <h3> {{ plan.price }} <span>+ IVA</span></h3>
+                        <div class="stripe-col">
+                            <div class="imgStripe">
+                                <img src="assets/images/pymes/co.jpg" alt="Colombia" />
+                            </div>
+                            <div class="txtStripe">
+                                <p>pesos</p>
+                            </div>
+                        </div>
+                        <p class="tym">{{ plan.accompaniment }}</p>
+                        <p class="tym margin-top-n">Aplican condiciones y restricciones</p>
+                        <a class="btn-aser btn-trans w-100-btn margin-auto h-lg-btn" [ngClass]="plan.head == 'Plan por hora' ? 'basic' : '' || plan.head == 'Plan por día' ? 'silver' : '' || plan.head == 'Plan por mes' ? 'gold' : ''" (click)="scroll()">
+                            <span>{{ plan.btn | titlecase }}</span>
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

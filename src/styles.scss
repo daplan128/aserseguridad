@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/variables/colors";
+@import "assets/variables/buttons";
+@import "assets/variables/forms";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    a {
+      &:hover {
+        text-decoration: none;
+      }      
+    }
+    .whatsapp-aser {
+        position: fixed;
+        z-index: 1090;
+        left: 25px;
+        bottom: 20px;
+        width: 60px;
+        @media(max-width:768px){
+          width: 42px;
+          left: initial;
+          right: 16px;
+          bottom: 60px;
+      }
+    }
+}

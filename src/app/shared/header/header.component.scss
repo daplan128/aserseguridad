@@ -1,0 +1,179 @@
+@import "../../../styles.scss";
+.header-aser {
+    position: relative;
+}
+::ng-deep .carousel-indicators {
+    bottom: 95px;
+    display: none;
+}
+::ng-deep .carousel-main {
+    background-color: $black;
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 620px;
+        overflow: hidden;
+        @media(max-width:768px){
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    img {
+        opacity: .15;
+        display: block; 
+        width: 135%;
+        @media(max-width:768px){
+            width: 350%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            transform: translate(-20%);           
+        }
+    }
+    .carousel-caption {
+        width: 40%;
+        top: initial;
+        bottom: initial!important;
+        @media(max-width:768px){
+            //transform: translate(10px, 10px);
+            width: 72%;
+            top: initial;
+            bottom: initial!important;
+        }
+        h3 {            
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-align: left;
+            margin-bottom: 16px;
+            @media(max-width:768px){
+                font-size: 1.4rem;
+            }
+        }
+        p{            
+            font-weight: 300;
+            font-size: 1em;
+            text-align: left;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            @media(max-width:768px){
+                font-size: .8em;
+            }
+            span {
+                background-color: $secondary-color;
+                padding: 2px 4px;
+                border-radius: 2px;
+                margin: 0 4px;
+                color:$black;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.header {
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 620px;
+        overflow: hidden;
+        @media(max-width:768px){
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            opacity: .15;
+            display: block; 
+            width: 135%;
+            @media(max-width:768px){
+                display: none;        
+            }
+        }
+        ::ng-deep .carousel-caption {
+            width: 40%;
+            top: initial;
+            bottom: initial!important;
+            @media(max-width:768px){
+                width: 72%;
+                top: initial;
+                bottom: initial!important;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 2.5rem;
+                text-align: left;
+                margin-bottom: 16px;
+                @media(max-width:768px){
+                    font-size: 1.4rem;
+                }
+            }
+            p{
+                font-weight: 300;
+                font-size: 1em;
+                text-align: left;
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -o-pre-wrap;
+                @media(max-width:768px){
+                    font-size: .8em;
+                }
+                span {
+                    background-color: $secondary-color;
+                    padding: 2px 4px;
+                    border-radius: 2px;
+                    margin: 0 4px;
+                    color:$black;
+                    font-weight: 700;
+                }
+            }
+            .icons-box {
+                width: 60%;
+                margin-top: 32px;
+                margin-left: -30px;
+                @media(max-width:768px){
+                    width: 110%;
+                    margin-top: 24px;
+                    margin-left: -19px;
+                }
+                .colum-icon {
+                    text-align: center;
+                    width: 33%;
+                    display: inline-block;
+                    .img-icon {
+                        opacity: 1;
+                        display: block;
+                        width: 50px;
+                        margin: 0 auto 16px;
+                        @media(max-width:768px){
+                            width: 50px;
+                        }
+                    }
+                    h4 {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color:$white;
+                        @media(max-width:768px){
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+    
+   

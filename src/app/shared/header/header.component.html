@@ -1,0 +1,53 @@
+<section class="header-aser" id="top">
+  <carousel [isAnimated]="true" *ngIf="this.urlink.url == '/'">
+    <slide *ngFor="let head of shortArray; let i = index " class="carousel-main" >
+      <img  [src]="head.img" alt="{{head.title}}" />
+      <div class="carousel-caption">
+        <h3>{{ head.title }}</h3>
+        <p [innerHTML]="head.body"></p>
+        <a class="btn-aser btn-outline-white w-40-btn" routerLink="{{ head.url }}">
+          <span>Más información</span>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>  
+      </div>          
+    </slide>
+  </carousel>
+
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 align-self-center px-0" *ngFor="let head of headersCarousel; let i = index"
+          [hidden]="
+            !(this.urlink.url == '/ser-pyme-sst' ? i == 0 : i == null) &&
+            !(this.urlink.url == '/outsourcing-sst' ? i == 1 : i == null) &&
+            !(this.urlink.url == '/proveedores-sst' ? i == 2 : i == null) &&
+            !(this.urlink.url == '/quienes-somos' ? i == 4 : i == null)
+          "
+        >
+          <div class="item">
+            <img [src]="head.img" alt="{{head.title}}" />
+            <div class="carousel-caption">
+              <h3>{{ head.title }}</h3>
+              <p [innerHTML]="head.body"></p>
+              <div class="icons-box" *ngIf="this.urlink.url == '/quienes-somos'">
+                <div class="colum-icon">
+                  <img src="assets/images/us/icons-aser-01.svg" alt="aSER" class="img-icon"/>
+                  <h4>aSER</h4>
+                </div>
+                <div class="colum-icon">
+                  <img src="assets/images/us/icons-aser-02.svg" alt="aSER" class="img-icon"/>
+                  <h4>SER</h4>
+                </div>
+                <div class="colum-icon">
+                  <img src="assets/images/us/icons-aser-03.svg" alt="aSER" class="img-icon"/>
+                  <h4>Seguridad</h4>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <app-form-main></app-form-main>  
+</section>

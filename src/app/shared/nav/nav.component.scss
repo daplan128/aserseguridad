@@ -1,0 +1,153 @@
+@import "../../../styles.scss";
+header {
+    .header_top_bar {
+        background: $super-light-gray;
+        transition: .6s;
+        .social-top {
+            @media(max-width:768px){
+                text-align: center;
+                padding: 8px;
+                border-bottom:1px $light-gray solid;
+            }
+            a {
+                i {                     
+                    background-color: transparent;
+                    color: $txt-gray;
+                    margin: 0 12px;
+                    padding:8px;
+                    &.icon-gray-social:hover {
+                        background-color: #3b5998;
+                        color: $white;
+                        border-radius: 6px;
+                        transition: all .3s ease;
+                        padding:8px 10px;
+                    }
+                    &.icon-gray-social2:hover {
+                        background-color: #0077b5;
+                        color: $white;
+                        border-radius: 6px;
+                        transition: all .3s ease;
+                        padding:8px;
+                    }
+                    &.icon-gray-social3:hover {
+                        background-color: #33ccff;
+                        color: $white;
+                        border-radius: 6px;
+                        transition: all .3s ease;
+                        padding:8px;
+                    }
+                    &.icon-gray-social5:hover {
+                        background-color: #cd486b;
+                        color: $white;
+                        border-radius: 6px;
+                        transition: all .3s ease;
+                        padding:8px;
+                    }
+                    &.icon-gray-social6:hover {
+                        background-color: #1ee663;
+                        color: $white;
+                        border-radius: 6px;
+                        transition: all .3s ease;
+                        padding:8px;
+                    }
+                }                        
+            }
+        }
+        .phone {
+            font-size: .8rem;
+            color: #878686;
+            @media(max-width:768px){
+                width: 100%;
+                text-align: center;
+                padding: 8px;
+                display: block;
+            }
+        }
+    }
+    .main_menu_bg {
+        border-bottom: 1px #efefef solid;
+        .navbar {
+            .navbar-brand {
+                img {
+                    height: 45px;
+                    @media(max-width:768px){
+                        height: 28px;
+                    }
+                }
+            }
+            .phone-call {
+                display: none;
+                @media(max-width:768px){
+                    display: inline-block;
+                    background-color: #d12020;
+                    color: #ffffff;
+                    font-size: 24px;
+                    margin-right: 8px;
+                    border-radius: 4px;
+                    padding: 5px 14px;
+                }                
+            }
+            .navbar-toggler {
+                @media(max-width:768px){
+                    padding: 8px
+                }  
+            }
+            .navbar-collapse {
+                flex-grow: inherit;
+                .navbar-nav {
+                    .nav-item {
+                        margin: 0 16px;
+                        .nav-link {
+                           text-transform: uppercase;
+                           font-size: 13px;
+                        }
+                        &.active {
+                            font-weight: 700;
+                        }
+                        
+                    }
+                    .btn-group {
+                        margin: 0 16px;
+                        @media(max-width:768px){
+                            margin: 8px 11px;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        .aser-drop {
+                            background-color: transparent;
+                            border: 0;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            color: rgba(0,0,0,.5);
+                            cursor: pointer;
+                            @media(max-width:768px){
+                                text-align: left;
+                            }
+                            &:focus {
+                                outline: none;
+                            }
+                            &.active {
+                                font-weight: 700;
+                                color: $black;
+                            }                            
+                        }
+                        .dropdown-menu{
+                            padding: 0;
+                            font-size: 14px;
+                            li {
+                                .dropdown-item {
+                                    padding: 10px 16px;
+                                    &:active {
+                                        background-color: $primary-color;
+                                        border: none;
+                                    }
+                                }
+                                
+                            }
+                        }                        
+                    }                    
+                }
+            }
+        }
+    }
+}
