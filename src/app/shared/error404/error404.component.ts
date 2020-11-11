@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UrlsService } from 'src/app/services/urls.service';
 
 @Component({
   selector: 'app-error404',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Error404Component implements OnInit {
 
-  constructor() { }
+  constructor(
+    public urlink: UrlsService,
+  ) { 
+    
+  }
 
   ngOnInit() {
   }

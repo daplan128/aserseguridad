@@ -64,8 +64,10 @@
                     <div class="btn-group" dropdown>
                         <button id="button-basic" dropdownToggle type="button" class="aser-drop dropdown-toggle" aria-controls="dropdown-basic"
                             [ngClass]="
-                                (this.urlink.url == '/ser-pyme-sst' ? 'active' : '') &&
-                                (this.urlink.url == '/ser-pyme-sst' ? 'active' : '')
+                                (urlink.url == '/ser-pyme-sst' ? 'active' : '') ||
+                                (urlink.url == '/outsourcing-sst' ? 'active' : '') ||
+                                (urlink.url == '/proveedores-sst' ? 'active' : '') ||
+                                (urlink.url == '/convenciones-sst' ? 'active' : '')
                             "
                         >
                           Línea de servicios <span class="caret"></span>
@@ -74,7 +76,7 @@
                           <li role="menuitem"><a class="dropdown-item" routerLink="/ser-pyme-sst">Ser Pyme SST</a></li>
                           <li role="menuitem"><a class="dropdown-item" routerLink="/outsourcing-sst">Outsourcing SST</a></li>
                           <li role="menuitem"><a class="dropdown-item" routerLink="/proveedores-sst">Proveedores SST</a></li>
-                          <li role="menuitem"><a class="dropdown-item" >Convenciones SST</a></li>                          
+                          <li role="menuitem"><a class="dropdown-item" routerLink="/convenciones-sst">Convenciones SST</a></li>                          
                         </ul>
                     </div>
                     <div class="btn-group" dropdown>

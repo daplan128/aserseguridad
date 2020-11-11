@@ -13,6 +13,7 @@ export class UrlsService {
     this.router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
         this.url = val.url;
+        console.log("Url Service", this.url)
       }
     });
   }

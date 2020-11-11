@@ -6,6 +6,7 @@ import { UsComponent } from './pages/us/us.component';
 import { SerPymeSstComponent } from './pages/products/ser-pyme-sst/ser-pyme-sst.component';
 import { OutsourcingSstComponent } from './pages/products/outsourcing-sst/outsourcing-sst.component';
 import { ProveedoresSstComponent } from './pages/products/proveedores-sst/proveedores-sst.component';
+import { ConvencionesSstComponent } from './pages/products/convenciones-sst/convenciones-sst.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'ser-pyme-sst', component: SerPymeSstComponent  },
   { path: 'outsourcing-sst', component: OutsourcingSstComponent  },
   { path: 'proveedores-sst', component: ProveedoresSstComponent  },
+  { path: 'convenciones-sst', component: ConvencionesSstComponent  },
   { path: '**', component: Error404Component  }
 ];
 

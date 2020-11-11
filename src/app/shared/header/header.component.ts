@@ -23,10 +23,11 @@ export class HeaderComponent implements OnInit {
     this.listHeaders.forEach(element => {
       element.body = element.body.replace("/\n/g", "<br>");
       }    
-    );
+    );    
   }
 
   ngOnInit() {
+    console.log("URL actual 2", this.urlink.url)
     this.headersList.getHeaders().subscribe( result => {
         this.listHeaders = result;
         this.headersCarousel = this.listHeaders[0].home;
