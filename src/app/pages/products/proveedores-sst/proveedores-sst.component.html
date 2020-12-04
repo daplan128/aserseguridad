@@ -7,6 +7,8 @@
             <div class="col-12">
                 <h2>Nuestros productos</h2>
                 <div class="line-title"></div>
+                <p>Con nuestras especialidades en el campo de seguridad y salud en el trabajo contarás con expertos en cada uno de nuestros productos para que desarrolles y mantengas una gestión exitosa en el SG-SST.</p>
+                <p>Nuestras especialidades están clasificadas para que puedas detallar cada rama en SST y la puedas engranar a tu sistema.</p>
             </div>
             <div class="col-12 col-md-3" *ngFor="let product of suppliersItems; let i = index">
                 <div class="thumbnail-product-aser">
@@ -29,18 +31,18 @@
                         <img alt="{{product.title}}" class="opacity-img" src="{{product.img}}"  />
                     </a>
                     <div class="caption-product-aser"
-                    [ngClass]="
-                        product.id == 1 ? 'id-1' : '' ||
-                        product.id == 2 ? 'id-2' : '' ||
-                        product.id == 3 ? 'id-3' : '' ||
-                        product.id == 4 ? 'id-4' : '' ||
-                        product.id == 5 ? 'id-5' : '' ||
-                        product.id == 6 ? 'id-6' : '' ||
-                        product.id == 7 ? 'id-7' : '' ||
-                        product.id == 8 ? 'id-8' : '' ||
-                        product.id == 9 ? 'id-9' : '' ||
-                        product.id == 10 ? 'id-10' : ''
-                    ">
+                        [ngClass]="
+                            product.id == 1 ? 'id-1' : '' ||
+                            product.id == 2 ? 'id-2' : '' ||
+                            product.id == 3 ? 'id-3' : '' ||
+                            product.id == 4 ? 'id-4' : '' ||
+                            product.id == 5 ? 'id-5' : '' ||
+                            product.id == 6 ? 'id-6' : '' ||
+                            product.id == 7 ? 'id-7' : '' ||
+                            product.id == 8 ? 'id-8' : '' ||
+                            product.id == 9 ? 'id-9' : '' ||
+                            product.id == 10 ? 'id-10' : ''
+                        ">
                         <div class="icon-product">
                             <img alt="{{product.title}}" src="{{product.icon}}" />
                         </div>
@@ -58,7 +60,7 @@
 <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header" >
             <img src="{{ productDetail != undefined ? productDetail.icon: '' }}" alt="{{ productDetail != undefined ? productDetail.title: '' }}" />
             <h5 class="modal-title" id="exampleModalLabel">{{ productDetail != undefined ? productDetail.title: '' }}</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
