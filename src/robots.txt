@@ -1,0 +1,17 @@
+User-Agent: *
+Disallow: /pymes.html
+Disallow: /eventos/index.html
+Disallow: /eventos/Seminario_actualizacion_res-0312.html
+Disallow: /outsourcing.html
+Disallow: /protocolos.html
+Disallow: /proveedores.html
+Disallow: /us.html
+Allow: /
+Allow: /quienes-somos
+Allow: /ser-pyme-sst
+Allow: /outsourcing-sst
+Allow: /proveedores-sst
+Allow: /convenciones-sst
+Allow: /error
+
+Sitemap: https://aserseguridad.co/sitemap.xml

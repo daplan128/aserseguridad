@@ -32,7 +32,7 @@
             <div class="col-12 col-md-6 algin-sefl-center">
                 <h2>Aplicativo Web</h2>
                 <p>Para la Implementación, Gestión y Administración del SG-SST</p>
-                <a class="btn-aser btn-outline-white w-40-btn margin-l h-lg-btn" data-toggle="modal" data-target="#appModal" target="_blank">
+                <a class="btn-aser btn-outline-white w-40-btn margin-l h-lg-btn" data-toggle="modal" data-target="#appModal" target="_blank" rel="noopener">
                     <span>Prueba demo sin costo</span>
                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                 </a>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <p class="tym">Aplican condiciones</p>
-                        <a class="btn-aser btn-trans w-100-btn margin-auto h-lg-btn" target="_blank" (click)="downloadPlan(offer.head, plans,i)" data-toggle="modal" data-target="#downloadPlanModal" data-backdrop="static"
+                        <a class="btn-aser btn-trans w-100-btn margin-auto h-lg-btn" target="_blank" rel="noopener" (click)="downloadPlan(offer.head, plans,i)" data-toggle="modal" data-target="#downloadPlanModal" data-backdrop="static"
                         [ngClass]="
                             plans.plan == 'Básico' ? 'basic' : '' || 
                             plans.plan == 'Plus' ? 'silver' : '' || 
