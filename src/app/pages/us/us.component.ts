@@ -16,8 +16,8 @@ export class UsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.title.setTitle('¿Quiénes somos? - aSERseguridad');
-    this.meta.addTag({ name: 'description', content: 'Sistemas de gestión de seguridad y salud en el trabajo'});
-    this.meta.addTag({ name: 'keywords', content: 'SGSST,Sistemas de gestión de seguridad y salud en el trabajo,SST,Seguridad y salud en el trabajo,SG-SST'});
+    this.title.setTitle('¿Quiénes somos?');
+    this.meta.addTag({ name: 'description', content: 'Somos una empresa enfocada en Respaldar a todas las PYMES, en la intervención de Riesgos Laborales con la representación, administración y gestión de su SG-SST.'});
+    this.meta.addTag({ name: 'keywords', content: 'Empresas de SST, Riesgos Laborales, Consultoría en SST, Asesoría en SST, SG-SST'});
   }
 }

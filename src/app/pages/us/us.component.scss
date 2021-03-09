@@ -131,6 +131,75 @@
             width:100%;
         }
     }
+    .box-teams-all {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        @media(max-width:768px) {
+            flex-direction: column;
+        }
+        .box-teams {
+            display: flex;
+            flex-direction: column;
+            //flex:1 1 25%;
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            width: 25%;
+            padding: 16px;
+            margin: 16px;
+            @media(max-width:768px) {
+                width: 100%;
+                margin: 16px auto;
+            }
+            &.rec {
+                width: 81%;
+                @media(max-width:768px) {
+                    width: 100%;
+                }
+            }
+            .img-teams {
+                width: 140px;
+                height: 140px;
+                overflow: hidden;
+                border-radius: 100%;
+                display: block;
+                margin: 16px auto;
+                border: 1px solid #eee;
+                -webkit-box-shadow: 0px 0px 16px 3px rgb(0 0 0 / 15%);
+                box-shadow: 0px 0px 16px 3px rgb(0 0 0 / 15%);
+                &.rec {
+                    width: 90%;
+                    height: initial;
+                    border: none;
+                    border-radius: initial;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .txt-teams {
+                h3 {
+                    font-size: 22px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    color: $terciary-color;
+                    margin-bottom: 16px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: $terciary-color;        
+                    text-align: center;
+                    width:100%;
+                }
+            }
+        }
+    }    
     .box-team {
         border: 1px $light-gray solid;
         border-radius: 6px;

@@ -23,9 +23,9 @@ export class OutsourcingSstComponent implements OnInit {
 
   ngOnInit() {
     //Meta
-    this.title.setTitle('Outsourcing SST - aSERseguridad');
-    this.meta.addTag({ name: 'description', content: 'Sistemas de gestión de seguridad y salud en el trabajo'});
-    this.meta.addTag({ name: 'keywords', content: 'SGSST,Sistemas de gestión de seguridad y salud en el trabajo,SST,Seguridad y salud en el trabajo,SG-SST'});
+    this.title.setTitle('Outsourcing SST');
+    this.meta.addTag({ name: 'description', content: 'Nuestros profesionales expertos en SST, te representarán y acompañarán en tu empresa, para ejecutar y mantener tu SG-SST.'});
+    this.meta.addTag({ name: 'keywords', content: 'Personal de SST, Outsourcing en SST, Suministro de personal en seguridad y salud en el trabajo, Profesionales en SST, Personal por día en SST, Personal por hora en SST, Personal SST por mes'});
     //Service
     this.outsourcingList.getHeaders().subscribe( result => {
       this.listOutsourcing = result;

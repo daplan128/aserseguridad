@@ -50,6 +50,19 @@ header {
                         transition: all .3s ease;
                         padding:8px;
                     }
+                    &.icon-gray-social7 {
+                        background-color: #ff8c00;
+                        color: $white;
+                        border-radius: 6px;
+                        transition: all .3s ease;
+                        padding:8px;
+                        &:hover {
+                            background-color: #d12020;
+                        }
+                        @media(max-width:768px){
+                            display: none;
+                        }
+                    }
                 }                        
             }
         }
@@ -77,6 +90,9 @@ header {
             }
             .phone-call {
                 display: none;
+                &.calendar {
+                    background-color: #ff8c00;
+                }
                 @media(max-width:768px){
                     display: inline-block;
                     background-color: #d12020;

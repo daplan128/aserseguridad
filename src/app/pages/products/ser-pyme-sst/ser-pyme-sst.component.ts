@@ -135,9 +135,9 @@ export class SerPymeSstComponent implements OnInit, AfterViewInit {
   }
   ngOnInit() {
     //Meta
-    this.title.setTitle('Ser Pymes SST - aSERseguridad');
-    this.meta.addTag({ name: 'description', content: 'Sistemas de gestión de seguridad y salud en el trabajo'});
-    this.meta.addTag({ name: 'keywords', content: 'SGSST,Sistemas de gestión de seguridad y salud en el trabajo,SST,Seguridad y salud en el trabajo,SG-SST'});
+    this.title.setTitle('Ser Pymes SST');
+    this.meta.addTag({ name: 'description', content: 'Con nuestra modalidad de Suscripción del SG-SST te respaldamos, representamos, administramos y gestionamos el Sistemas de Gestión de Seguridad y Salud en el Trabajo de tu empresa.'});
+    this.meta.addTag({ name: 'keywords', content: 'Sistemas de Gestión de Seguridad y Salud en el Trabajo, Implementación del SG-SST, SGSST, Como implementar un SG-SST, Consultores en SST, Seguridad y Salud en el Trabajo, Empresa que implemente un SG-SST'});
     //Products
     this.pyme.getPymes().subscribe( result => {
       this.listBullets = result;

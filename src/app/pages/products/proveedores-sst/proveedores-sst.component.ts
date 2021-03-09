@@ -27,9 +27,9 @@ export class ProveedoresSstComponent implements OnInit {
 
   ngOnInit() {
     //Meta
-    this.title.setTitle('Proveedores SST - aSERseguridad');
-    this.meta.addTag({ name: 'description', content: 'Sistemas de gestión de seguridad y salud en el trabajo'});
-    this.meta.addTag({ name: 'keywords', content: 'SGSST,Sistemas de gestión de seguridad y salud en el trabajo,SST,Seguridad y salud en el trabajo,SG-SST'});
+    this.title.setTitle('Proveedores SST');
+    this.meta.addTag({ name: 'description', content: 'Te apoyamos en la Ejecución de tu sistema de gestión en seguridad en el trabajo, selecciona en nuestra gama de productos en SST, y dale cumplimiento a tu plan de trabajo'});
+    this.meta.addTag({ name: 'keywords', content: 'Capacitaciones en SST, Inspecciones de Seguridad, Batería de Riesgos Psicosocial, Mediciones Ambientales, Auditoría en los estándares mínimos según lineamientos MINISTERIO DE TRABAJO Resolución. 0312 de 2019, Implementación de Sistemas de Gestión ISO 9001, Implementación de ISO 14001, Implementación de ISO 45001, Investigación de accidentes de trabajo MORTALES GRAVES Según Res. 1401 del 2017, Diseño de planes de prevención, preparación y atención de emergencias'});
     //Service
     this.suppliersList.getSuppliers().subscribe( result => {
         this.listSuppliers = result;

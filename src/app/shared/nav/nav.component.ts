@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UrlsService } from 'src/app/services/urls.service';
 
+declare var $: any;
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -15,6 +17,9 @@ export class NavComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   }  
 
   toggleCollapsed() {
