@@ -9,45 +9,47 @@
           <span>Más información</span>
           <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </a>  
-      </div>          
+      </div>
     </slide>
+    <!-- <app-form-main></app-form-main>   -->
   </carousel>
+  
 
-  <header class="header">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 align-self-center px-0" *ngFor="let head of headersCarousel; let i = index"
+	<header class="header">
+        <div class="head-intern" *ngFor="let head of headersCarousel; let i = index"
           [hidden]="
             !(this.urlink.url == '/ser-pyme-sst' ? i == 0 : i == null) &&
             !(this.urlink.url == '/outsourcing-sst' ? i == 1 : i == null) &&
             !(this.urlink.url == '/proveedores-sst' ? i == 2 : i == null) &&
             !(this.urlink.url == '/quienes-somos' ? i == 4 : i == null)
-          "
-        >
-          <div class="item">
-            <img [src]="head.img" alt="{{head.title}}" />
-            <div class="carousel-caption">
-              <h3>{{ head.title }}</h3>
-              <p [innerHTML]="head.body"></p>
-              <div class="icons-box" *ngIf="this.urlink.url == '/quienes-somos'">
-                <div class="colum-icon">
-                  <img src="assets/images/us/icons-aser-01.svg" alt="aSER" class="img-icon"/>
-                  <h4>aSER</h4>
-                </div>
-                <div class="colum-icon">
-                  <img src="assets/images/us/icons-aser-02.svg" alt="aSER" class="img-icon"/>
-                  <h4>SER</h4>
-                </div>
-                <div class="colum-icon">
-                  <img src="assets/images/us/icons-aser-03.svg" alt="aSER" class="img-icon"/>
-                  <h4>Seguridad</h4>
-                </div>
-              </div>
+          ">
+            <div class="item">
+              	<img [src]="head.img" alt="{{head.title}}" />
+              	<div class="carousel-caption">
+                	<h3>{{ head.title }}</h3>
+                	<p [innerHTML]="head.body"></p>
+                	<div class="icons-box" *ngIf="this.urlink.url == '/quienes-somos'">
+						<div class="colum-icon">
+							<img src="assets/images/us/icons-aser-01.svg" alt="aSER" class="img-icon"/>
+							<h4>aSER</h4>
+						</div>
+						<div class="colum-icon">
+							<img src="assets/images/us/icons-aser-02.svg" alt="aSER" class="img-icon"/>
+							<h4>SER</h4>
+						</div>
+						<div class="colum-icon">
+							<img src="assets/images/us/icons-aser-03.svg" alt="aSER" class="img-icon"/>
+							<h4>Seguridad</h4>
+						</div>
+                	</div>
+              	</div>            
             </div>            
-          </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <app-form-main></app-form-main>  
+		<div class="form-content" [hidden]="i > 0">
+			<app-form-main></app-form-main>  
+		</div> 
+        <!-- <div class="col-12 col-md-4 align-self-center">
+          <app-form-main></app-form-main>  
+        </div> -->      
+  	</header>  
 </section>
