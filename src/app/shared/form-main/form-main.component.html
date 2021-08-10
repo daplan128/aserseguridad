@@ -1,4 +1,11 @@
-<div class="form-main" *ngIf="this.urlink.url == '/' || this.urlink.url == '/quienes-somos' || this.urlink.url == '/ser-pyme-sst' || this.urlink.url == '/outsourcing-sst' || this.urlink.url == '/proveedores-sst' ">
+<div class="form-main" 
+    *ngIf="
+        this.urlink.url == '/' || 
+        this.urlink.url == '/quienes-somos' || 
+        this.urlink.url == '/ser-pyme-sst' || 
+        this.urlink.url == '/outsourcing-sst' || 
+        this.urlink.url == '/proveedores-sst' ||
+        this.urlink.url == '/casos-exito'">
     <h4>Conoce más sobre <span>nuestros planes</span></h4>
     <div id="contactForm"></div>    
 </div>

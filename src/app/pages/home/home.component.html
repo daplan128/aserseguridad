@@ -2,20 +2,18 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <h1 class="d-none">aSERseguridad - Tu Respaldo en riesgos laborales</h1>
                 <h2>Líneas de servicio</h2>
                 <div class="line-title"></div>
                 <p>Brindarte soluciones es nuestro propósito, conoce a detalle cada una de nuestras líneas de servicio y selecciona la que más se ajuste a tus necesidades</p>
             </div>
             <div class="col-12 col-md-6" *ngFor="let product of shortArray">
                 <figure class="snip">
-                    <!-- <div class="overlay-img"></div> -->
-                    <img alt="{{ product.title }}" class="opacity-img" src="{{ product.img }}" />
+                    <img alt="{{ product.title }}" title="{{ product.title }}" class="opacity-img" src="{{ product.img }}" />
                     <figcaption>
-                        <img alt="{{ product.title }}" class="img-product-home" src="{{ product.brand }}" />
+                        <img alt="{{ product.title }}" title="{{ product.title }}" class="img-product-home" src="{{ product.brand }}" />
                         <h3>{{ product.slogan }}</h3>
-                        <!-- <a routerLink="{{ product.url }}"></a> -->
-                        <!-- <p class="description-snip">{{ product.slogan }}</p> -->
-                        <a class="btn-aser btn-red w-40-btn" routerLink="{{ product.url }}">
+                        <a class="btn-aser btn-red w-40-btn" routerLink="{{ product.url }}" title="{{ product.title }}">
                             <span>Más información</span>
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         </a>
@@ -35,10 +33,10 @@
                 <p>Nuestra marca, nuestro respaldo. Todos nuestros servicios garantizan tranquilidad y reconocimiento a nuestros clientes </p>
             </div>
             <div class="col-12 col-md-5">
-                <img src="assets/images/home/te-garantizamos-02.svg" alt="Te garantizamos" class="imgWarrnty-left"/>
+                <img src="assets/images/home/te-garantizamos-02.svg" alt="Te garantizamos" title="Te garantizamos" class="imgWarrnty-left"/>
             </div>
             <div class="col-12 col-md-7">
-                <img src="assets/images/home/te-garantizamos-01.svg" alt="Te garantizamos" class="imgWarrnty-right"/>
+                <img src="assets/images/home/te-garantizamos-01.svg" alt="Te garantizamos" title="Te garantizamos" class="imgWarrnty-right"/>
             </div>
         </div>
     </div>

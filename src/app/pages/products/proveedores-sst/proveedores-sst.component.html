@@ -2,9 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4 offset-md-4 text-center">
-                <img src="assets/images/home/logo-proveedores-sst.png" alt="Outsourcing - aSERseguridad" class="logo-product">
+                <img src="assets/images/home/logo-proveedores-sst.png" alt="Outsourcing - aSERseguridad" title="Outsourcing - aSERseguridad" class="logo-product">
             </div>
             <div class="col-12">
+                <h1 class="d-none">Proveedores SST - Ejecución de gestión y seguridad en el trabajo</h1>
                 <h2>Nuestros productos</h2>
                 <div class="line-title"></div>
                 <p>Con nuestras especialidades en el campo de seguridad y salud en el trabajo contarás con expertos en cada uno de nuestros productos para que desarrolles y mantengas una gestión exitosa en el SG-SST.</p>
@@ -27,8 +28,8 @@
                     ">
                         <span>+ más info</span>
                     </div>
-                    <a class="link-product" (click)="products(product,i)" data-toggle="modal" data-target="#detailModal">
-                        <img alt="{{product.title}}" class="opacity-img" src="{{product.img}}"  />
+                    <a class="link-product" (click)="products(product,i)" data-toggle="modal" data-target="#detailModal" title="{{product.title}}">
+                        <img alt="{{product.title}}" title="{{product.title}}" class="opacity-img" src="{{product.img}}"  />
                     </a>
                     <div class="caption-product-aser"
                         [ngClass]="
@@ -44,7 +45,7 @@
                             product.id == 10 ? 'id-10' : ''
                         ">
                         <div class="icon-product">
-                            <img alt="{{product.title}}" src="{{product.icon}}" />
+                            <img alt="{{product.title}}" title="{{product.title}}" src="{{product.icon}}" />
                         </div>
                         <div class="txt-product">
                             <h3>{{product.title}}</h3>
@@ -54,10 +55,10 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="box-download">
-                    <img src="assets/images/suppliers/icons/download.svg" alt="Descargar Portafolio">
+                    <img src="assets/images/suppliers/icons/download.svg" alt="Descargar Portafolio" title="Descargar Portafolio" />
                     <div class="box-download-text">
                         <p>Descargar nuestro portafolio completo</p>
-                        <a class="cta-download" href="assets/pdf-plans/Brochure-aserseguridad.pdf" target="_blank">
+                        <a class="cta-download" href="assets/pdf-plans/Brochure-aserseguridad.pdf" target="_blank" title="Descarga brochure pdf">
                             Descargar
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
@@ -73,14 +74,14 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header" >
-            <img src="{{ productDetail != undefined ? productDetail.icon: '' }}" alt="{{ productDetail != undefined ? productDetail.title: '' }}" />
+            <img src="{{ productDetail != undefined ? productDetail.icon: '' }}" alt="{{ productDetail != undefined ? productDetail.title: '' }}" title="{{ productDetail != undefined ? productDetail.title: '' }}" />
             <h5 class="modal-title" id="exampleModalLabel">{{ productDetail != undefined ? productDetail.title: '' }}</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
-            <img src="{{ productDetail != undefined ? productDetail.imgModal: '' }}" alt="{{ productDetail != undefined ? productDetail.title: '' }}" />
+            <img src="{{ productDetail != undefined ? productDetail.imgModal: '' }}" alt="{{ productDetail != undefined ? productDetail.title: '' }}" title="{{ productDetail != undefined ? productDetail.title: '' }}" />
             <ul>
                 <li *ngFor="let bullet of bullets">{{ bullet.txt }}</li>
             </ul>

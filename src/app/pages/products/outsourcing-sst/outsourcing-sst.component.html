@@ -2,18 +2,19 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-4 offset-md-4 text-center">
-                <img src="assets/images/home/logo-outsourcing-sst.png" alt="Outsourcing - aSERseguridad" class="logo-product">
+                <img src="assets/images/home/logo-outsourcing-sst.png" alt="Outsourcing - aSERseguridad" title="Outsourcing - aSERseguridad" class="logo-product">
             </div>
             <div class="col-12">
+                <h1 class="d-none">Outsourcing SST - Acompañamiento a tu empresa</h1>
                 <h2>Solicita</h2>
                 <div class="line-title"></div>
                 <p>tu profesional experto en SST</p>
             </div>
             <div class="col-12 col-md-6">
-                <img src="assets/images/outsourcing/info-outsourcing-01.svg" alt="Profesional experto en SST" />
+                <img src="assets/images/outsourcing/info-outsourcing-01.svg" alt="Profesional experto en SST" title="Profesional experto en SST" />
             </div>
             <div class="col-12 col-md-6">
-                <img src="assets/images/outsourcing/info-outsourcing-02.svg" alt="Profesional experto en SST" />
+                <img src="assets/images/outsourcing/info-outsourcing-02.svg" alt="Profesional experto en SST" title="Profesional experto en SST" />
             </div>            
         </div>
     </div>
@@ -37,7 +38,7 @@
                         <h3> {{ plan.price }} <span>+ IVA</span></h3>
                         <div class="stripe-col">
                             <div class="imgStripe">
-                                <img src="assets/images/pymes/co.jpg" alt="Colombia" />
+                                <img src="assets/images/pymes/co.jpg" alt="Colombia" title="Colombia" />
                             </div>
                             <div class="txtStripe">
                                 <p>pesos</p>
@@ -45,7 +46,7 @@
                         </div>
                         <p class="tym">{{ plan.accompaniment }}</p>
                         <p class="tym margin-top-n">Aplican condiciones y restricciones</p>
-                        <a class="btn-aser btn-trans w-100-btn margin-auto h-lg-btn" [ngClass]="plan.head == 'Plan por hora' ? 'basic' : '' || plan.head == 'Plan por día' ? 'silver' : '' || plan.head == 'Plan por mes' ? 'gold' : ''" (click)="scroll()">
+                        <a class="btn-aser btn-trans w-100-btn margin-auto h-lg-btn" [ngClass]="plan.head == 'Plan por hora' ? 'basic' : '' || plan.head == 'Plan por día' ? 'silver' : '' || plan.head == 'Plan por mes' ? 'gold' : ''" (click)="scroll()" title="Suscríbete">
                             <span>{{ plan.btn | titlecase }}</span>
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         </a>

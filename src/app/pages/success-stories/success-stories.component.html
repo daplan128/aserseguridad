@@ -1,0 +1,76 @@
+<section class="video-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <h1 class="d-none">Casos de éxito - Nuestros clientes son respaldados por nuestra marca</h1>
+                <div class="video">
+                    <img src="assets/images/sucess-stories/meeting.jpg" alt="Reunión aSerseguridad" title="Reunión aSerseguridad" />
+                    <h4>“Nuestra marca, nuestro respaldo”</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="bullets">
+                    <div class="icon-bullet">
+                        <img src="assets/images/sucess-stories/icon_active_client.svg" alt="122 Clientes Activos" title="122 Clientes Activos" />
+                    </div>
+                    <div class="txt-bullet">
+                        <h3>122 Clientes Activos</h3>
+                        <p>Nuestros clientes son respaldados por nuestra marca, garantizandoles tranquilidad y confianza</p>
+                    </div>
+                </div>
+                <div class="bullets">
+                    <div class="icon-bullet">
+                        <img src="assets/images/sucess-stories/icon_12_years.svg" alt="12 Años de Experiencia" title="12 Años de Experiencia"/>
+                    </div>
+                    <div class="txt-bullet">
+                        <h3>12 Años de Experiencia</h3>
+                        <p>Gestionar la seguridad y salud en el trabajo en nuestros clientes es ofrecer una experiencia excepcional en servicio.</p>
+                    </div>
+                </div>
+                <div class="bullets">
+                    <div class="icon-bullet">
+                        <img src="assets/images/sucess-stories/icon_recognition.svg" alt="3 Reconocimientos" title="3 Reconocimientos"/>
+                    </div>
+                    <div class="txt-bullet">
+                        <h3>3 Reconocimientos</h3>
+                        <p>Ser galardonados por nuestros aliados y empresas de ranking en SST, nos da la fortaleza y la responsabilidad de siempre estar para nuestros clientes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Testimonios</h2>
+                <div class="line-red"></div>
+            </div>
+            <div class="col-12 col-md-3" *ngFor="let item of testtmonials">
+                <div class="box-testimonials">
+                    <div class="img-testimonials">
+                        <img src="{{item.img}}" alt="{{item.name}}"  title="{{item.name}}"/>
+                    </div>                    
+                    <h4>{{item.name}}</h4>
+                    <h5 [innerHTML]="item.occupation"></h5>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="email-send">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <h3>Recibe todas las noticias en tu bandeja de correo</h3>
+                <div class="line-white"></div>
+                <p>Te enviaremos información de valor frente a seguridad y salud en el trabajo</p>
+            </div>
+            <div class="col-12 col-md-5">
+                
+            </div>
+        </div>
+    </div>
+</section>

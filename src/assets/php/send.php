@@ -15,10 +15,10 @@ try {
     //$mail->SMTPDebug = 4;                               // Habilitar el debug
 
     $mail->isSMTP();                                      // Usar SMTP
-    $mail->Host = 'mail.aserseguridad.co';  // Especificar el servidor SMTP reemplazando por el nombre del servidor donde esta alojada su cuenta
+    $mail->Host = 'mail.gmail.com';  // Especificar el servidor SMTP reemplazando por el nombre del servidor donde esta alojada su cuenta
     $mail->SMTPAuth = true;                               // Habilitar autenticacion SMTP
-    $mail->Username = 'info@aserseguridad.co';               // Nombre de usuario SMTP donde debe ir la cuenta de correo a utilizar para el envio
-    $mail->Password = 'aserseguridad1234';                           // Clave SMTP donde debe ir la clave de la cuenta de correo a utilizar para el envio
+    $mail->Username = 'maaaik.dev@gmail.com';               // Nombre de usuario SMTP donde debe ir la cuenta de correo a utilizar para el envio
+    $mail->Password = 'Maa@ik2020da2';                           // Clave SMTP donde debe ir la clave de la cuenta de correo a utilizar para el envio
     $mail->SMTPSecure = 'ssl';                            // Habilitar encriptacion
     $mail->Port = 465;                                    // Puerto SMTP                     
     $mail->Timeout       =   30;
@@ -35,9 +35,9 @@ try {
 
 	//Recipients   
 
-    $mail->setFrom('info@aserseguridad.co');     //Direccion de correo remitente (DEBE SER EL MISMO "Username")
+    $mail->setFrom('maaaik.dev@gmail.com');     //Direccion de correo remitente (DEBE SER EL MISMO "Username")
     $mail->addAddress('maaaik.dev@gmail.com');     // Agregar el destinatario
-    $mail->addReplyTo('info@aserseguridad.co');     //Direccion de correo para respuestas     
+    $mail->addReplyTo('maaaik.dev@gmail.com');     //Direccion de correo para respuestas     
 
     //Content
     $mail->isHTML(true);                                  

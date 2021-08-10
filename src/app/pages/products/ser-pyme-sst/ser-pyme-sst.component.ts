@@ -5,6 +5,7 @@ import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms'
 import {HttpClient, HttpResponse} from '@angular/common/http';
 import { MessageService } from 'src/app/services/message.service';
 import { Title, Meta } from '@angular/platform-browser';
+import { MetatagsService } from 'src/app/services/metatags.service';
 
 declare var $: any;
 declare var hbspt: any
@@ -51,8 +52,9 @@ export class SerPymeSstComponent implements OnInit, AfterViewInit {
     public urlink: UrlsService,
     private frBuilder: FormBuilder,
     private mailService : MessageService,
-    public title: Title,
-    public meta: Meta
+    private _title: Title,
+    private _metaService: Meta,
+    private metaServ: MetatagsService
   ) { 
     this.formulario = this.frBuilder.group({
       email: ['Ej, user@gmail.com', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],
@@ -135,9 +137,17 @@ export class SerPymeSstComponent implements OnInit, AfterViewInit {
   }
   ngOnInit() {
     //Meta
-    this.title.setTitle('Ser Pymes SST');
-    this.meta.addTag({ name: 'description', content: 'Con nuestra modalidad de Suscripción del SG-SST te respaldamos, representamos, administramos y gestionamos el Sistemas de Gestión de Seguridad y Salud en el Trabajo de tu empresa.'});
-    this.meta.addTag({ name: 'keywords', content: 'Sistemas de Gestión de Seguridad y Salud en el Trabajo, Implementación del SG-SST, SGSST, Como implementar un SG-SST, Consultores en SST, Seguridad y Salud en el Trabajo, Empresa que implemente un SG-SST'});
+    this.metaServ.createCanonicalURL();
+    this._title.setTitle('Ser Pymes SST - Implementación en SG-SST');    
+    this._metaService.updateTag({
+      name: 'description', content: 'Con nuestra modalidad de Suscripción del SG-SST te respaldamos, representamos, administramos y gestionamos el Sistemas de Gestión de Seguridad y Salud en el Trabajo de tu empresa.'
+    });
+    this._metaService.addTag({
+      name: 'author', content: '@Maaaik_reyes'
+    });
+    this._metaService.updateTag({
+      name: 'keywords', content: 'Sistemas de Gestión de Seguridad y Salud en el Trabajo, Implementación del SG-SST, SGSST, Como implementar un SG-SST, Consultores en SST, Seguridad y Salud en el Trabajo, Empresa que implemente un SG-SST'
+    });
     //Products
     this.pyme.getPymes().subscribe( result => {
       this.listBullets = result;

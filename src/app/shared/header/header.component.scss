@@ -51,6 +51,15 @@
             top: initial;
             bottom: initial!important;
         }
+        h2 {            
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-align: left;
+            margin-bottom: 16px;
+            @media(max-width:768px){
+                font-size: 1.4rem;
+            }
+        }
         h3 {            
             font-weight: 700;
             font-size: 2.5rem;
@@ -63,6 +72,26 @@
         p{            
             font-weight: 300;
             font-size: 1em;
+            text-align: left;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            @media(max-width:768px){
+                font-size: .8em;
+            }
+            span {
+                background-color: $secondary-color;
+                padding: 2px 4px;
+                border-radius: 2px;
+                margin: 0 4px;
+                color:$black;
+                font-weight: 700;
+            }
+        }
+        h1{            
+            font-weight: 300;
+            font-size: 1em;
+            line-height: 24px;
             text-align: left;
             white-space: pre-wrap;
             white-space: -moz-pre-wrap;
@@ -106,7 +135,7 @@
             img {
                 opacity: .15;
                 display: block; 
-                //width: 135%;
+                width: 124%;
                 @media(max-width:768px){
                     display: none;        
                 }
@@ -120,6 +149,15 @@
                     top: initial;
                     bottom: initial!important;
                 }
+                h2 {
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                    text-align: left;
+                    margin-bottom: 16px;
+                    @media(max-width:768px){
+                        font-size: 1.4rem;
+                    }
+                }
                 h3 {
                     font-weight: 700;
                     font-size: 2.5rem;
@@ -127,6 +165,26 @@
                     margin-bottom: 16px;
                     @media(max-width:768px){
                         font-size: 1.4rem;
+                    }
+                }
+                h1{
+                    font-weight: 300;
+                    font-size: 1em;
+                    line-height: 24px;
+                    text-align: left;
+                    white-space: pre-wrap;
+                    white-space: -moz-pre-wrap;
+                    white-space: -o-pre-wrap;
+                    @media(max-width:768px){
+                        font-size: .8em;
+                    }
+                    span {
+                        background-color: $secondary-color;
+                        padding: 2px 4px;
+                        border-radius: 2px;
+                        margin: 0 4px;
+                        color:$black;
+                        font-weight: 700;
                     }
                 }
                 p{

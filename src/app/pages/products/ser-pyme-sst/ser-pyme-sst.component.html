@@ -2,9 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4 offset-md-4 text-center">
-                <img src="assets/images/home/logo-pyme-sst.png" alt="Outsourcing - aSERseguridad" class="logo-product">
+                <img src="assets/images/home/logo-pyme-sst.png" alt="Outsourcing - aSERseguridad" title="Outsourcing - aSERseguridad" class="logo-product">
             </div>
             <div class="col-12">
+                <h1 class="d-none">Ser Pymes SST - Implementación en SG-SST</h1>
                 <h2>Paquete inicial SST</h2>
                 <div class="line-title"></div>
                 <p>Incluido en los diferentes planes</p>
@@ -27,12 +28,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 algin-sefl-center">
-                <img src="assets/images/pymes/img-app.svg" alt="Aplicativo web" />
+                <img src="assets/images/pymes/img-app.svg" alt="Aplicativo web" title="Aplicativo web" />
             </div>
             <div class="col-12 col-md-6 algin-sefl-center">
                 <h2>Aplicativo Web</h2>
                 <p>Para la Implementación, Gestión y Administración del SG-SST</p>
-                <a class="btn-aser btn-outline-white w-40-btn margin-l h-lg-btn" data-toggle="modal" data-target="#appModal" target="_blank" rel="noopener">
+                <a class="btn-aser btn-outline-white w-40-btn margin-l h-lg-btn" data-toggle="modal" data-target="#appModal" target="_blank" rel="noopener" title="Demo aSerseguridad">
                     <span>Prueba demo sin costo</span>
                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                 </a>
@@ -55,7 +56,7 @@
                     <p>Planes</p>
                     <div class="select-plan">
                         <div class="custom-plan" *ngFor="let plans of offer.dataOffer">
-                            <a (click)="toggleChild(i, plans.id)" class="boton">
+                            <a (click)="toggleChild(i, plans.id)" class="boton" title="{{ offer.head }}">
                                 <i class="fa {{ plans.icon}} circle-plan" [ngClass]="plans.plan == 'Básico' ? 'basic' : '' || plans.plan == 'Plus' ? 'silver' : '' || plans.plan == 'Premium' ? 'gold' : ''" ></i>
                                 <h4>{{ plans.plan }}</h4>
                             </a>
@@ -68,14 +69,14 @@
                         <h3> {{ plans.price }} <span>+ IVA</span></h3>
                         <div class="stripe-col">
                             <div class="imgStripe">
-                                <img src="assets/images/pymes/co.jpg" alt="Colombia" />
+                                <img src="assets/images/pymes/co.jpg" alt="Colombia" title="Colombia" />
                             </div>
                             <div class="txtStripe">
                                 <p>pesos / mensual por un año</p>
                             </div>
                         </div>
                         <p class="tym">Aplican condiciones</p>
-                        <a class="btn-aser btn-trans w-100-btn margin-auto h-lg-btn" target="_blank" rel="noopener" (click)="downloadPlan(offer.head, plans,i)" data-toggle="modal" data-target="#downloadPlanModal" data-backdrop="static"
+                        <a class="btn-aser btn-trans w-100-btn margin-auto h-lg-btn" title="{{ plans.btn | titlecase }}" target="_blank" rel="noopener" (click)="downloadPlan(offer.head, plans,i)" data-toggle="modal" data-target="#downloadPlanModal" data-backdrop="static"
                         [ngClass]="
                             plans.plan == 'Básico' ? 'basic' : '' || 
                             plans.plan == 'Plus' ? 'silver' : '' || 
@@ -96,7 +97,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <img src="assets/images/pymes/logo-aSER-Sura-horizontal.jpg" alt="Aserseguridad - Sura" />
+                <img src="assets/images/pymes/logo-aSER-Sura-horizontal.jpg" alt="Aserseguridad - Sura" title="Aserseguridad - Sura" />
                 <p><span>aSERseguridad</span> con el respaldo de seguros <span>SURA</span>, garantiza su compromiso con tu empresa asegurando la calidad y cumplimiento de sus servicios con los siguientes amparos incluidos en cualquier plan de suscripción seleccionado:</p>
             </div>
             <div class="col-12 col-md-4">

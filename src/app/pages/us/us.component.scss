@@ -7,6 +7,19 @@
     @media(min-width:1720px){
         padding: 4% 12%;
     }
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        color: $terciary-color;
+        margin-bottom: 0;
+        text-align: center;
+        @media(max-width:768px) {
+            font-size: 24px;
+            line-height: 32px;
+            text-align: left;
+        }
+    }
     h2 {
         font-size: 32px;
         line-height: 40px;
@@ -64,7 +77,14 @@
         }
         .txtBullet {
             width: 80%;
-            display: inline-block;            
+            display: inline-block;
+            h3 {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $terciary-color;
+                text-align: left;
+            }        
             h4 {
                 font-size: 16px;
                 line-height: 24px;
@@ -182,6 +202,14 @@
             }
             .txt-teams {
                 h3 {
+                    font-size: 22px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    color: $terciary-color;
+                    margin-bottom: 16px;
+                    text-align: center;
+                }
+                h4 {
                     font-size: 22px;
                     line-height: 24px;
                     font-weight: 700;

@@ -7,16 +7,26 @@ import { SerPymeSstComponent } from './pages/products/ser-pyme-sst/ser-pyme-sst.
 import { OutsourcingSstComponent } from './pages/products/outsourcing-sst/outsourcing-sst.component';
 import { ProveedoresSstComponent } from './pages/products/proveedores-sst/proveedores-sst.component';
 import { ConvencionesSstComponent } from './pages/products/convenciones-sst/convenciones-sst.component';
+import { SuccessStoriesComponent } from './pages/success-stories/success-stories.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent  },
+  { 
+    path: '', 
+    component: HomeComponent ,
+    data: { 
+      title: 'Hola'
+    } 
+  },
   { path: 'quienes-somos', component: UsComponent  },
   { path: 'ser-pyme-sst', component: SerPymeSstComponent  },
   { path: 'outsourcing-sst', component: OutsourcingSstComponent  },
   { path: 'proveedores-sst', component: ProveedoresSstComponent  },
   { path: 'convenciones-sst', component: ConvencionesSstComponent  },
-  { path: '**', component: Error404Component  }
+  { path: 'casos-exito', component: SuccessStoriesComponent  },
+  //{ path: '404', pathMatch:'full', component: Error404Component  },
+  { path: '404', component: Error404Component },
+  { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({

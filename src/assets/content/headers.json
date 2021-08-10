@@ -50,6 +50,16 @@
                 "url": "/quienes-somos",
                 "brand": "assets/images/home/logo-convenciones-sst.png",
                 "slogan": "Posicionan su marca, dominan sus ventas y crecen con otros"
+            },
+            {
+                "userId": 6,
+                "id": 6,
+                "img": "assets/images/headers/banner-main-us.jpg",
+                "title": "Casos de éxito",      
+                "body": "Conoce por que nuestros clientes nos eligen. Nuestra oferta valor se refleja en el crecimiento social, industrial y empresarial al ser un aliado estratégico, aportando el desarrollo de la seguridad y salud en el trabajo con la contratación de nuestras líneas de servicio. Vamos al siguiente nivel de SST",
+                "url": "/casos-exito",
+                "brand": "assets/images/home/logo-convenciones-sst.png",
+                "slogan": "Posicionan su marca, dominan sus ventas y crecen con otros"
             }
         ]
     }    
