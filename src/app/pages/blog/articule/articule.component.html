@@ -1,0 +1,14 @@
+<div class="articule-list">
+    <div>
+        <div *ngFor="let item of articules" [routerLink]="['/blog']" [queryParams]="{item:item | json }">
+            <div class="image"><img src={{item.portada}} alt=""></div>
+            <div class="infos">
+                <span>{{ item.subtitulo }}</span>
+                <h3>{{ item.titulo }}</h3>
+                <p>{{ item.info.substring(0,100) + '...' }}</p>
+                <button>Ver mas</button>
+                <div>{{ item.nombre }}</div>
+            </div>
+        </div>
+    </div>
+</div>

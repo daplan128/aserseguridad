@@ -1,0 +1,152 @@
+.title {
+    padding: 200px 200px;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+}
+.title .marca {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(45, 79, 152, 0.9);
+    width: 100%;
+    height: 100%;
+}
+.title > span {
+    position: relative;
+    font-family: 'JLI';
+    font-size: 22px;
+}
+.title > h2 {
+    position: relative;
+    font-family: 'JBD';
+    font-size: 50px;
+}
+.articules {
+    padding: 20px 300px;
+}
+.articules > .escritor {
+    display: flex;
+}
+.articules > .escritor > img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 30px;
+}
+.articules > .escritor > div {
+    margin-top: 50px;
+    display: grid;
+    height: 100px;
+}
+.articules > .escritor > div > label{
+    color: #2d4f98;
+    font-family: 'JBD';
+    height: 20px;
+    font-size: 24px;
+}
+.articules > .escritor > div > span{
+    color: #2d4f98;
+    font-family: 'JR';
+}
+.articules > .list {
+    margin-top: 50px;
+}
+.articules > .list > div > p{
+    margin-top: 20px;
+    white-space: pre-line;
+    text-align: justify;
+}
+.articules > .list > div > center{
+    margin-top: 40px;
+}
+.articule-list {
+    padding: 20px 100px;
+    width: 100%;
+}
+.articule-list > div {
+    width: 100%;
+}
+.articule-list > div > div{
+    display: inline-block;
+    width: 50%;
+}
+.articule-list > div > div > center {
+    display: flex;
+}
+
+.articule-list > div > div > center > div.image {
+    padding: 20px;
+}
+
+.articule-list > div > div > center > div.image > img{
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+}
+
+.articule-list > div > div > center > div.infos {
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
+    width: 700px;
+    height: 300px;
+    padding: 10;
+    padding-top: 20px;
+    margin-top: 80px;
+    margin-left: -100px;
+    z-index: 0;
+    padding-left: 100px;
+    text-align: justify;
+    font-family: 'JR';
+    position: relative;
+}
+.articule-list > div > div > center > div.infos > div{
+    padding: 20px;
+    float: right;
+    color: #2d4f98;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.articule-list > div > div > center > div.infos > span{
+    margin-top: 1000px;
+    color: #000;
+    font-weight: bold;
+}
+.articule-list > div > div > center > div.infos > h3{
+    margin-top: 20px;
+    color: #65b24a;
+    text-align: left;
+    font-family: 'JBD';
+}
+.articule-list > div > div > center > div.infos > p{
+    color: #000;
+    text-align: left;
+}
+.articule-list > div > div > center > div.infos > button{
+    position: absolute;
+    background-color: #65b24a;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    border-color: #65b24a;
+    border-style: solid;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+.articule-list > div > div > center > div > button:hover {
+    color: #65b24a;
+    background-color: #fff;
+    cursor: pointer;
+}

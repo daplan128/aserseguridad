@@ -29,6 +29,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 //MASCARA CELULAR
 import { TextMaskModule } from 'angular2-text-mask';
 import { SuccessStoriesComponent } from './pages/success-stories/success-stories.component';
+import { ArticuleComponent } from './pages/blog/articule/articule.component';
+import { BlogComponent } from './pages/blog/blog/blog.component';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { SuccessStoriesComponent } from './pages/success-stories/success-stories
     ConvencionesSstComponent,
     ProveedoresSstComponent,
     Error404Component,
-    SuccessStoriesComponent
+    SuccessStoriesComponent,
+    ArticuleComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

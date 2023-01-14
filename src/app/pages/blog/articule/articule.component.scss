@@ -1,0 +1,86 @@
+.articule-list {
+    padding: 20px 100px;
+    width: 100%;
+}
+.articule-list > div {
+    width: 100%;
+}
+.articule-list > div > div{
+    display: inline-block;
+    width: 50%;
+}
+.articule-list > div > div {
+    display: flex;
+}
+
+.articule-list > div > div > div.image {
+    padding: 20px;
+}
+
+.articule-list > div > div > div.image > img{
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+}
+
+.articule-list > div > div > div.infos {
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
+    width: 700px;
+    height: 300px;
+    padding: 10;
+    padding-top: 20px;
+    margin-top: 80px;
+    margin-left: -100px;
+    z-index: 0;
+    padding-left: 100px;
+    text-align: justify;
+    font-family: 'JR';
+    position: relative;
+}
+.articule-list > div > div > div.infos > div{
+    padding: 20px;
+    float: right;
+    color: #d12020;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.articule-list > div > div > div.infos > span{
+    margin-top: 1000px;
+    color: #000;
+    font-weight: bold;
+}
+.articule-list > div > div > div.infos > h3{
+    margin-top: 20px;
+    color: #d12020;
+    text-align: left;
+    font-family: 'JBD';
+}
+.articule-list > div > div > div.infos > p{
+    color: #000;
+    text-align: left;
+}
+.articule-list > div > div > div.infos > button{
+    position: absolute;
+    background-color: #E68D1A;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    border-color: #E68D1A;
+    border-style: solid;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+.articule-list > div > div > div > button:hover {
+    color: #E68D1A;
+    background-color: #fff;
+    cursor: pointer;
+}
