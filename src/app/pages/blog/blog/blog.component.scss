@@ -1,10 +1,11 @@
 .title {
-    padding: 200px 200px;
+    padding: 200px 100px;
     color: #fff;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: 100 auto;
     position: relative;
+    min-height: 500px;
 }
 .title .marca {
     position: absolute;
@@ -53,17 +54,22 @@
     color: #2d4f98;
     font-family: 'JR';
 }
-.articules > .list {
+
+.articules > .list > div > div > img {
     margin-top: 50px;
+    width: 100%;
 }
-.articules > .list > div > p{
-    margin-top: 20px;
-    white-space: pre-line;
-    text-align: justify;
-}
-.articules > .list > div > center{
-    margin-top: 40px;
-}
+
+.articules > .list > div > div {
+    margin-top: 50px;
+} 
+
+.articules > .list > div > iframe {
+    margin-top: 50px;
+    min-height: 300px;
+    max-height: 500px;
+} 
+
 .articule-list {
     padding: 20px 100px;
     width: 100%;
@@ -72,24 +78,22 @@
     width: 100%;
 }
 .articule-list > div > div{
-    display: inline-block;
+    display: inline-flex;
     width: 50%;
 }
-.articule-list > div > div > center {
+
+.articule-list > div > div > div.image {
+    padding: 20px;
     display: flex;
 }
 
-.articule-list > div > div > center > div.image {
-    padding: 20px;
-}
-
-.articule-list > div > div > center > div.image > img{
+.articule-list > div > div > div.image > img{
     object-fit: cover;
     width: 300px;
     height: 350px;
 }
 
-.articule-list > div > div > center > div.infos {
+.articule-list > div > div > div.infos {
     -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
     -moz-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
     box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.07);
@@ -105,38 +109,38 @@
     font-family: 'JR';
     position: relative;
 }
-.articule-list > div > div > center > div.infos > div{
+.articule-list > div > div > div.infos > div{
     padding: 20px;
     float: right;
-    color: #2d4f98;
+    color: #d12020;
     font-weight: bold;
     font-style: oblique;
 }
 
-.articule-list > div > div > center > div.infos > span{
+.articule-list > div > div > div.infos > span{
     margin-top: 1000px;
     color: #000;
     font-weight: bold;
 }
-.articule-list > div > div > center > div.infos > h3{
+.articule-list > div > div > div.infos > h3{
     margin-top: 20px;
-    color: #65b24a;
+    color: #d12020;
     text-align: left;
     font-family: 'JBD';
 }
-.articule-list > div > div > center > div.infos > p{
+.articule-list > div > div > div.infos > p{
     color: #000;
     text-align: left;
 }
-.articule-list > div > div > center > div.infos > button{
+.articule-list > div > div > div.infos > button{
     position: absolute;
-    background-color: #65b24a;
+    background-color: #E68D1A;
     width: 150px;
     height: 40px;
     text-align: center;
     border-radius: 20px;
     padding: 5px;
-    border-color: #65b24a;
+    border-color: #E68D1A;
     border-style: solid;
     font-size: 20px;
     color: #fff;
@@ -145,8 +149,136 @@
     cursor: pointer;
 }
 
-.articule-list > div > div > center > div > button:hover {
-    color: #65b24a;
+.articule-list > div > div > div > button:hover {
+    color: #E68D1A;
     background-color: #fff;
     cursor: pointer;
+}
+
+
+@media (max-width: 1400px) {
+    .articules {
+        padding: 20px 200px;
+    }
+    .articule-list {
+        padding: 20px 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .articules {
+        padding: 20px 100px;
+    }
+    .articule-list {
+        padding: 20px 100px;
+        width: 100%;
+        display: inline-flex;
+    }
+    .articule-list > div > div{
+        width: 50%;
+        align-items: center;
+        justify-items: center;
+        display: inline-block;
+    }
+    .articule-list > div > div > div.image {
+        padding: 20px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .articule-list > div > div > div.infos {
+        margin-top: -30px;
+        width: 100%;
+        margin-left: 0px;
+        align-items: center;
+        justify-items: center;
+    }
+    .articule-list > div > div > div.infos > button{
+        left: 50px;
+    }
+    .articule-list > div > div > div.infos > div{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .articule-list {
+        padding: 20px 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .articule-list {
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .articule-list > div {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .articule-list > div > div{
+        display: flex;
+        width: 80%;
+    }
+    .articule-list > div > div > div.infos {
+        margin-left: -100px;
+    }
+    .articule-list > div > div > div.infos > button{
+        left: 100px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .articules {
+        padding: 20px 50px;
+    }
+    .articule-list {
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .articule-list > div {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .articule-list > div > div{
+        display: flex;
+        width: 100%;
+    }
+    .articule-list > div > div > div.infos > button{
+        left: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .articule-list {
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .articule-list > div {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .articule-list > div > div{
+        display: grid;
+        width: 100%;
+    }
+    .articule-list > div > div > div.infos > button{
+        left: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .articules {
+        padding: 20px 10px;
+    }
+    .articule-list {
+        padding: 20px 10px;
+        width: 100%;
+    }
 }

@@ -1,1 +1,37 @@
-
+<div class="blog">
+    <div class="title" [ngStyle]="{ 'background-image': 'url(' + this.info.portada + ')'}">
+        <div class="marca"></div>
+        <span>{{ this.info.subtitulo }}</span>
+        <h2>{{ this.info.titulo }}</h2>
+    </div>
+    <div class="articules">
+        <div class="escritor">
+            <img :src={{this.info.img}} alt="">
+            <div>
+                <label for="">{{ this.info.nombre }}</label>
+                <span>{{ this.info.fecha }}</span>
+            </div>
+        </div>
+        <div class="list">
+            <div *ngFor="let item of articules">
+                <div *ngIf="item.name === 'texto'">{{item.info}}</div>
+                <div *ngIf="item.name === 'imagen'"><img src={{item.info}} alt=""></div>
+                <iframe *ngIf="item.name === 'video'" width="100%" height="auto" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="articule-list">
+        <div>
+            <div *ngFor="let item of articules_list" [routerLink]="['/blog']" [queryParams]="{item:item | json }">
+                <div class="image"><img src={{item.portada}} alt=""></div>
+                <div class="infos">
+                    <span>{{ item.subtitulo }}</span>
+                    <h3>{{ item.titulo }}</h3>
+                    <p>{{ item.info.substring(0,100) + '...' }}</p>
+                    <button>Ver mas</button>
+                    <div>{{ item.nombre }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

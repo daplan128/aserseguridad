@@ -8,7 +8,7 @@ import { ApiserviceService } from './Service';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-  item: {
+  info: {
     id: number,
     titulo: string,
     subtitulo: string,
@@ -17,14 +17,20 @@ export class BlogComponent implements OnInit {
     portada: string
   }
   articules:any
+  articules_list:any
   constructor(private route: ActivatedRoute, private _apiservie:ApiserviceService) { }
 
   ngOnInit() {
     this.route.queryParams
       .subscribe(params => {
-        this.item = JSON.parse(params.item)
-        this._apiservie.getData(this.item.id).subscribe(res => {
+        this.info = JSON.parse(params.item)
+        this._apiservie.getData(this.info.id).subscribe(res => {
           this.articules = res
+          console.log(this.articules)
+        })
+        this._apiservie.getDataArticulesList().subscribe(res => {
+          this.articules_list = res
+          console.log(this.articules)
         })
       }
     );
