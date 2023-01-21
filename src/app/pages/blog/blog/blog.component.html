@@ -20,6 +20,7 @@
             </div>
         </div>
     </div>
+    <h1>También te puede interesar:</h1>
     <div class="articule-list">
         <div>
             <div *ngFor="let item of articules_list" [routerLink]="['/blog']" [queryParams]="{item:item | json }">
