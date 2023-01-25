@@ -14,7 +14,8 @@ export class BlogComponent implements OnInit {
     subtitulo: string,
     img: string
     nombre: string
-    portada: string
+    portada: string,
+    link: string
   }
   articules:any
   articules_list:any
@@ -26,11 +27,9 @@ export class BlogComponent implements OnInit {
         this.info = JSON.parse(params.item)
         this._apiservie.getData(this.info.id).subscribe(res => {
           this.articules = res
-          console.log(this.articules)
         })
         this._apiservie.getDataArticulesList().subscribe(res => {
           this.articules_list = res
-          console.log(this.articules)
         })
       }
     );

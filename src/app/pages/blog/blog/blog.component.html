@@ -1,5 +1,6 @@
 <div class="blog">
-    <div class="title" [ngStyle]="{ 'background-image': 'url(' + this.info.portada + ')'}">
+    <div class="title">
+        <img src="{{this.info.portada}}" alt="">
         <div class="marca"></div>
         <span>{{ this.info.subtitulo }}</span>
         <h2>{{ this.info.titulo }}</h2>
@@ -20,6 +21,7 @@
             </div>
         </div>
     </div>
+    <button><a href="{{this.info.link}}" target="_blank">Contáctenos</a></button>
     <h1>También te puede interesar:</h1>
     <div class="articule-list">
         <div>
